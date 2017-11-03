@@ -1,5 +1,26 @@
 # C343 Project - Routing Wires on a Chip
 
+##Group Solution Summary
+For this project, a Breadth First Search is the main algorithm used for 
+finding paths between two points. BFS itself wont exactly find the path
+however, the path can be obtained from the BFS results. In order to accommodate
+for obstacles, and points that cannot be used for a path, the preconditions for 
+a BFS method will simply be changed.
+
+For example, the BFS method takes a board and two coordinates as start and finish
+with the Board b, there is enough information to decide which points are obstacles
+from within that Board object. A BFS will be run on that Board starting at the start
+node. Once the finish node is found in that search, then the algorithm will stop, because
+you have reached the destination.
+
+BFS itself produces a list of 'paths'. Think of BFS as ripples in a pond. Preforming 
+the search, there will be paths produced (lists of Coords) all within one ArrayList.
+These paths are not all needed. The only path needed is the path that reaches from 
+the start node to the finish. That path is THE path for two Coords. Helper functions
+obtain this path for the final output of paths in a given board.
+
+Further explaination for helper functions is given in comments for the Routing class.
+
 ## Project Description
 
 In this project you will implement a Java program that places wires on
