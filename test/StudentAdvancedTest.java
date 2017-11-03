@@ -21,6 +21,4 @@ public class StudentAdvancedTest {
     public void testWire8() {
         Utilities.test("./test/inputs/wire8.in");
     }
-
-
 }

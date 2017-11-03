@@ -12,7 +12,31 @@ public class Board {
 		this.width = width;
 		this.height = height;
 	}
-	
+
+	public Map<Coord, Integer> getGrid() {
+		return grid;
+	}
+
+	public void setGrid(Map<Coord, Integer> grid) {
+		this.grid = grid;
+	}
+
+	public int getWidth() {
+		return width;
+	}
+
+	public void setWidth(int width) {
+		this.width = width;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
 	public int getValue(Coord c){
 		return this.grid.get(c);
 	}
